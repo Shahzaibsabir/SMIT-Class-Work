@@ -23,15 +23,15 @@
         //     document.write("Your User Nam of Password is Incorrect")
         // }
 
-        
+
         //=============================Reduce in array==============
-      let students = [
-        { id: 2023, name: "Shahzaib", score: 80 },
-        { id: 2024, name: "Ahmed", score: 60 },
-        { id: 2025, name: "Aliyan", score: 90 },
-        { id: 2026, name: "Ghaffar", score: 30 },
-        { id: 207, name: "Hammad", score: 70 },
-      ];
+    //   let students = [
+    //     { id: 2023, name: "Shahzaib", score: 80 },
+    //     { id: 2024, name: "Ahmed", score: 60 },
+    //     { id: 2025, name: "Aliyan", score: 90 },
+    //     { id: 2026, name: "Ghaffar", score: 30 },
+    //     { id: 207, name: "Hammad", score: 70 },
+    //   ];
 
       // const highscore = students.filter(function(Val){
       //         if (students.score >= 80)
@@ -42,7 +42,16 @@
 
       // console.log(highscore.score)
       // let sumscore
-      const totalScore = students.reduce(function (acc, curritem) {
+ //=============================Reduce in array==============
+      let student2 = [
+        { id: 2023, name: "Shahzaib", score: 80 },
+        { id: 2024, name: "Ahmed", score: 60 },
+        { id: 2025, name: "Aliyan", score: 90 },
+        { id: 2026, name: "Ghaffar", score: 30 },
+        { id: 207, name: "Hammad", score: 70 }, ]
+
+
+      const totalScore = student2.reduce(function (acc, curritem) {
         console.log("Previosu Value====>" + acc);
         console.log("Current Value-===>" + curritem.score);
 
@@ -52,7 +61,7 @@
       }, 0);
 
       console.log(totalScore);
-
+    //   /=============================Reduce END==============
     </Script>
     
 </body>
