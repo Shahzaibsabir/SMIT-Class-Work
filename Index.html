@@ -9,20 +9,49 @@
 
     <Script>
 
-        let user
-        let password
+        // let user
+        // let password
 
-        user = prompt("Please Enter Your User Name")
-        password = prompt("Please Enter Your User Name")
+        // user = prompt("Please Enter Your User Name")
+        // password = prompt("Please Enter Your User Name")
 
-        if(user == "admin" || password == "admin" ){
+        // if(user == "admin" || password == "admin" ){
 
-            document.write("Wellcome to your Bank AL Habib Account")
-        }
-        else{
-            document.write("Your User Nam of Password is Incorrect")
-        }
+        //     document.write("Wellcome to your Bank AL Habib Account")
+        // }
+        // else{
+        //     document.write("Your User Nam of Password is Incorrect")
+        // }
 
+        
+        //=============================Reduce in array==============
+      let students = [
+        { id: 2023, name: "Shahzaib", score: 80 },
+        { id: 2024, name: "Ahmed", score: 60 },
+        { id: 2025, name: "Aliyan", score: 90 },
+        { id: 2026, name: "Ghaffar", score: 30 },
+        { id: 207, name: "Hammad", score: 70 },
+      ];
+
+      // const highscore = students.filter(function(Val){
+      //         if (students.score >= 80)
+
+      //         return true
+
+      // })
+
+      // console.log(highscore.score)
+      // let sumscore
+      const totalScore = students.reduce(function (acc, curritem) {
+        console.log("Previosu Value====>" + acc);
+        console.log("Current Value-===>" + curritem.score);
+
+        acc += curritem.score;
+
+        return acc/5
+      }, 0);
+
+      console.log(totalScore);
 
     </Script>
     
