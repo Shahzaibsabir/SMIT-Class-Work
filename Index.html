@@ -76,6 +76,29 @@
       console.log(totalScore);
     //   /=============================Reduce END==============
 
+ //   /=============================Concatination Start ==============
+
+        let arr1 = [
+        { id: 2023, name: "Haider", score: 80, subject: "Math" },
+        { id: 2024, name: "Farhan", score: 60, subject: "English" },
+        { id: 2025, name: "Talha", score: 90, subject: "Urdu" },
+        { id: 2026, name: "Tahir", score: 30, subject: "MAth" },
+        { id: 207, name: "Hammad", score: 70, subject: "Urdu" },
+      ];
+
+      let arr2 = [
+        { id: 2023, name: "Shahzaib", score: 80, subject: "Math" },
+        { id: 2024, name: "Ahmed", score: 60, subject: "English" },
+        { id: 2025, name: "Aliyan", score: 90, subject: "Urdu" },
+        { id: 2026, name: "Ghaffar", score: 30, subject: "MAth" },
+        { id: 207, name: "Asim", score: 70, subject: "Urdu" },
+      ];
+
+const myArr = [...arr1, ...arr2]
+console.log(myArr)
+
+
+     //   /=============================Concatination End ==============
 
 
 
