@@ -100,6 +100,20 @@ console.log(myArr)
 
      //   /=============================Concatination End ==============
 
+    //   /=============================Gnerate Random number By Range Start==============
+function generateRandom(maxLimit = 10){
+  let rand = Math.random() * maxLimit;
+  console.log(rand); // say 99.81321410836433
+
+  rand = Math.round(Math.floor(rand)); // 99
+
+  return rand;
+}
+generateRandom(78); // 43
+// generateRandom(200); // 165
+
+//   /=============================Gnerate Random number By Range End==============
+
 
 
 
