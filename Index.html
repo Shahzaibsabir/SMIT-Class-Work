@@ -98,9 +98,10 @@ const myArr = [...arr1, ...arr2]
 console.log(myArr)
 
 
-     //   /=============================Concatination End ==============
+//   /=============================Concatination End ==============
 
-    //   /=============================Gnerate Random number By Range Start==============
+
+//   /=============================Gnerate Random number By Range Start==============
 function generateRandom(maxLimit = 10){
   let rand = Math.random() * maxLimit;
   console.log(rand); // say 99.81321410836433
@@ -111,6 +112,22 @@ function generateRandom(maxLimit = 10){
 }
 generateRandom(78); // 43
 // generateRandom(200); // 165
+
+
+
+
+        function generateRandom(minLimit = -100){
+  let rand = Math.random() * minLimit;
+  console.log(rand); // say 99.81321410836433
+
+  rand = Math.round(Math.floor(rand)); // 99
+
+  return rand;
+}
+generateRandom(78); // 43
+// generateRandom(200); // 165
+
+        
 
 //   /=============================Gnerate Random number By Range End==============
 
