@@ -126,6 +126,20 @@ generateRandom(78); // 43
 }
 generateRandom(78); // 43
 // generateRandom(200); // 165
+// --------------------------------------Extra part----------------------------------
+
+
+               function generateRandom(fullLength = -100){
+  let rand = Math.random() * fullLength;
+  console.log(rand); // say 99.81321410836433
+
+  rand = Math.round(Math.floor(rand)); // 99
+
+  return rand;
+}
+generateRandom(78); // 43
+// generateRandom(200); // 165
+// --------------------------------------Extra part----------------------------------
 
         
 
