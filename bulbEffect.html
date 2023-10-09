@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb programm ON / OFF</title>
+
+    <style>
+        body {
+            padding: 0px;
+            margin: 0xp;
+            box-sizing: border-box;
+            background-color: black;
+            color: white;
+        }
+
+        /*----------------Bulb Img-------------------- */
+
+        .bulb {
+            height: 500px;
+            width: 100%;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            /* border: 2px solid white; */
+            margin: 15px;
+            
+            /* padding: 200px 50px 0px 500px; */
+        }
+
+        /*--------------Btn Style-------------  */
+
+        button {
+
+            height: 80px;
+            width: 150px;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 20px;
+            margin: 50px;
+        }
+
+        .btn {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*-----------------Btn Hover------------------*/
+        button:hover {
+            /* border: 5px solid red; */
+
+            background-color: rgb(30, 121, 240);
+            transition: all ease 1s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ------------BULB Immg------------- -->
+   
+    <div class="bulb">
+        <H1>Create Bulb ON/OFF effect using <span style="color: red; font-size: 40px;">JavaScript</span></H1>
+        <img src="./assets/off bulb.png" alt="" width="400px" class="bulbOff">
+
+    </div>
+
+    <!---------------- BUTTON---------------->
+    <div class="btn">
+
+        <button class="bulb-On" onclick="bulbOn()">ON</button>
+        <button class="bulb_Off" onclick="bulbOff()"> OFF</button>
+    </div>
+
+
+    <script>
+
+        //-------Bulb Off Function--------------------------
+
+        function bulbOff() {
+
+            let bulbFun = document.querySelector(".bulbOff")
+            bulbFun.setAttribute("src", "./assets/off bulb.png")
+        }
+
+        //-------Bulb On Function--------------------------
+
+        function bulbOn() {
+
+            let bulbFun = document.querySelector(".bulbOff")
+            bulbFun.setAttribute("src", "./assets/on bulb.png")
+        }
+
+    </script>
+</body>
+
+</html>
