@@ -1,66 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Color</title>
+    <title>Background Changer</title>
+
+
     <style>
         body {
+
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            margin-top: 200px;
 
         }
-        h1{
-            background-color: rgba(0, 0, 0, 0.729);
-            color: whitesmoke;
-            font-size: 40px;
-            font-weight: 900;
-            width: 500px;
-            display: flex;
-            align-items: space-between;
-            justify-content: center;
-            padding: 10px 20px;
-            border-radius: 10px;
-            
-        }
 
-        button{
-            width: 200px;
-            height: 50px;
-            font-size: 30px;
+        .container {
+            border: 2px solid black;
+
+            height: 20vh;
+            width: 80vh;
+            border-radius: 20px;
             display: flex;
-            justify-content: center;
             align-items: center;
-            cursor: pointer;
-            border-radius: 10px;
-            background-color: lightgreen;
+            text-align: center;
+            flex-direction: column;
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            height: 10vh;
+            width: 20vh;
+            font-size: 20px;
+            border-radius: 30px 10px;
+            background: transparent;
+            border: 2px solid rgb(46, 224, 255);
+            color: white;
+
 
         }
     </style>
 </head>
+
 <body>
 
-    <div id="changeColor">
-    <h1> Background Color: <span>    #F1f5f8</span> </h1>
-    <button id="btn" onclick="colorHandler()"> Click Me </button>
-</div>
+    <div class="container">
+        <h1>Background Colo: <span>12i23</span></h1>
+        <button id="btn" onclick="colorHandler()">Click Me</button>
+    </div>
 
 
-<script>
-var btn = document.getElementById("btn").addEventListener("onclick", colorHandler)
+    <script>
+
+        const colorTray = ["red", "green", "yellow", "blue","violet", "pink", "orange"]
+
+        const colorName = document.querySelector('span')
+
+        var btn = document.getElementById("btn").addEventListener("onclick", colorHandler)
+
+        function colorHandler() {
+
+            var randomNum = Math.floor(Math.random() * 6);
+         
+            document.body.style.backgroundColor = colorTray[randomNum]
+            colorName.textContent=colorTray[randomNum]
+            document.getElementById("btn").style.border = `2px solid ${colorTray [randomNum]}`
+          
+        }
+    </script>
 
 
-const colors = ['red', 'blue', 'green', 'pink', 'violet']
-var colorName = document.querySelector('span')
-
-
-function colorHandler(){
-    var randomNumber = Math.floor(Math.random()*6);
-    colorName.textContent = colors[randomNumber]
-    document.body.style.backgroundColor = colors[randomNumber]
-}
-</script>
 </body>
+
 </html>
