@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+4
+
+*{
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+
+    /* border: 2px solid black; */
+    height: 500px;
+    width: 1200px;
+   /* margin: 50px; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding: 50px;
+   
+}
+
+.slider{
+
+
+    /* border: 3px solid red; */
+    height: 500px;
+    width: 500px;
+    background-color: rgb(237, 240, 240);
+    border-radius: 20px;
+    padding-left: 50px;
+}
+
+.slider:hover{
+    box-shadow: 0px 0px 30px 0px blue;
+}
+
+
+.slider-Img{
+
+    /* border: 2px solid green; */
+    height: 33%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dp-Img{
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    /* border: 5px solid rgb(red, green, blue);
+    padding: 5px; */
+    /* background: linear-gradient(red, blue, purple); */
+    /* border: 5px solid red; */
+    box-shadow: 0px 0px 20px 2px blue;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 20px 50px;
+    object-fit: cover auto;
+    
+
+}
+
+.slider-content{
+
+    /* border: 2px solid purple; */
+    height: 40%;
+    width: 90%;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+  /* margin: 0px 0px 0px 30px; */
+}
+
+.slider-content, h2, h5{
+
+    margin: 0px;
+}
+
+.btn{
+
+    /* border: 2px solid blue;  */
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button{
+    
+    
+    border: 2px solid green;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    height: 30px;
+    width: 50px;
+    border-radius: 30px;
+    border: none;
+    /* padding: 1px; */
+}
+.btn button:hover{
+
+    box-shadow: 0px 0px 5px 2px blue;
+}
+
+.client-form{
+
+    border: 2px solid black;
+    height: 50%;
+    width: 40%;
+    margin-left: 120px;
+}
+
+.form{
+
+    border-radius: 8px;
+    text-align:center;
+    border: no;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!---------------- Slider Container------------>
+    <div class="container">
+
+
+
+        <div class="slider">
+            <!-- -------------------SLider Image-------- -->
+            <div class="slider-Img">
+                <img id="userPic" type="file" class="dp-Img" src="./assets/dp.avif" alt="">
+            </div>
+
+            <!-- -------------------SLider Content-------- -->
+
+            <div class="slider-content">
+                <h2>Hello World</h3>
+                <h5 style="color: blue;">Hello World</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ipsam commodi, dolorem delectus quo
+                    officia enim debitis veritatis laudantium consectetur hic. Adipisci quas beatae error. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Repellendus, eveniet enim a aut consectetur mollitia
+                    distinctio nisi repudiandae deserunt nobis doloremque alias natus laborum rem veniam ipsam hic
+                    tempore commodi.</p>
+            </div>
+
+            <!-- -------------------SLider move Btn-------- -->
+
+            <div class="btn">
+             
+                <button onclick="prevHandler()"><</button>
+                <button onclick="nextHandler()">></button>
+            </div>
+
+        </div>
+
+        <!-- <div class="client-form">
+            <form  class="regForm" action="submit">
+
+            <label class="form" for="">Employee No</label><br>
+            <input class="form" type="text" placeholder="enetr your id"><br>
+            <label  for="">Name</label><br>
+            <input type="text" placeholder="enter your name"><br>
+            <label for="">Rank</label><br>
+            <input type="text" placeholder="enter your ranl / desination"><br>
+            <label for="">Department / Section</label><br>
+            <input type="text" placeholder="enter your department"><br>
+            <label for="">Experience</label><br>
+            <input type="text" placeholder="enter your experience"><br>
+            <label for="">Date of Birth</label><br>
+            <input type="date" placeholder="Please Enter Your Name"><br>
+            
+            </form>
+
+
+        </div> -->
+
+    </div>
+
+
+
+
+
+h
+    <script src="app.js"></script>
+
+
+    <script>
+        
+        // const userDP = ["./assets/1.jpeg", "./assets/2.jpg", "./assets3.jpg"]
+const userData = [
+    {
+        name: "Hassan",
+        rank: "Web Developer",
+        About: "WEb Developer, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam corporis vero ipsa eveniet laborum, facere quia temporibus natus odio esse.",
+        // image : "./assets/1.jpeg"
+        pic:   image.src="./assets/1.jpeg"
+    },
+    {
+        name: "Talha",
+        rank: "Front-end Developer",
+        About: "WEb Developer, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam corporis vero ipsa eveniet laborum, facere quia temporibus natus odio esse.",
+        // image : "./assets/2.jpeg"
+        pic:   image.src="./assets/2.jpeg"
+        
+    },
+    {
+        name: "Furqan",
+        rank: "Database Engineer",
+        About: "WEb Developer, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam corporis vero ipsa eveniet laborum, facere quia temporibus natus odio esse.",
+        // image : "./assets/3.jpeg"
+        pic:   image.src="./assets/3.jpeg"
+    },
+    {
+        name: "Shahzaib Khan",
+        rank: "Andriod App Developer",
+        About: "WEb Developer, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam corporis vero ipsa eveniet laborum, facere quia temporibus natus odio esse."
+    }
+]
+var numArr = 0;
+var headingTag = document.querySelector("h2")
+var rankTag = document.querySelector("h5")
+var aboutTag = document.querySelector("p")
+var pic = document.querySelector("img")
+
+
+function nextHandler() {
+    numArr++;
+
+
+  
+
+    headingTag.textContent = userData[numArr].name;
+    rankTag.textContent = userData[numArr].rank;
+    aboutTag.textContent = userData[numArr].About;
+    
+   pic = createElement = userData[numArr].pic;
+   
+    console.log(userData[numArr])
+    
+  
+    
+}
+
+    
+
+// function prevHandler() {
+//     numArr++;
+
+    
+//     headingTag.textContent = userData[numArr].name;
+//     rankTag.textContent = userData[numArr].rank;
+//     aboutTag.textContent = userData[numArr].About;
+//     // imgTag.imageContent = userData[numArr].img;
+//     console.log(userData[numArr])
+    
+
+
+// }
+    </script>
+</body>
+
+</html>
