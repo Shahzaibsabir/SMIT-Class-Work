@@ -1,38 +1,70 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM-Chapter</title>
+    <title>FOnt Size increase Or Decrease</title>
+
+    <style>
+        div{
+
+            background-color: black;
+            color: white;
+            width: 400px;
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+            padding: 100px;            
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        button{
+            border-radius: 30px;
+            background-color: transparent;
+            color: white;
+            border:  2px solid yellow;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
 </head>
+
 <body>
+
+
+    <div class="container">
+
+        <h2>Font Size Increase Or Decrease</h2>
+
+        <p style="font-size:  15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, doloremque, praesentium molestias similique
+            expedita neque aliquam fugiat vel in cumque at rerum officiis minus quia a eaque asperiores libero aut!</p>
+
+            <button id="dec" onclick="">Increase</button>
+            <button id="inc" onclick="">Decrease</button>
+
+    </div>
+
+
     
-<!-- ANIA JavaScript- YouTube Channel for - DOM Project -->
 
-<!------------------------------ DOM------------- -->
+    <script>
+var para = document.querySelector("p")
 
- <script>
+var number = 15
+        
+// function increase() {
+//     number++
 
-
-
-
-
-
-
-
-
+//     para.style.fontSize = number + "px"
+    
+// }
 
 
+// function decrease() {
+//     number--
 
+//     para.style.fontSize = number + "px"
+// }
 
-
-
-
-     
-
-    </script>
-
-
-</body>
-</html>
