@@ -75,6 +75,14 @@ h1{
 </div>
 
 
+    <script>
+let numArr = 0;
+var numTag = document.querySelector("h1")
+
+function increment() {
+
+
+
 
 
 
