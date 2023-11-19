@@ -88,6 +88,26 @@ console.log(numArr)
 }
 
 
+function decrement() {
+
+    if(numArr <= 100){
+
+        numArr--;
+numTag.textContent = numArr;
+console.log(numArr)
+    }
+
+
+
+
+}
+
+
+</script>
+</body>
+</html>
+
+
 
 
 
