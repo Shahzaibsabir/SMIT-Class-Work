@@ -38,5 +38,26 @@ margin-top: 200px;
    
 }
 
+button{
+
+    height: 8vh;
+    width: auto;
+    font-size: 15px;
+    border-radius:30px;
+    background: transparent;
+    border: 2px solid rgb(46, 224, 255);
+    font-weight: bold;
+    color: white;
+    /* padding-bottom: 20px; */
+    margin-top: 30px;
+    padding: 10px;
+}
+
+h1{
+
+    font-size:50px;
+    margin-top: 30px;
+}
+
 
 
