@@ -59,5 +59,30 @@ h1{
     margin-top: 30px;
 }
 
+    </style>
+</head>
+<body>
+<div class="container">
+<h2>Number Increment / Decrement </h2>
+<h1>1</h1>
+<div class="Btn">
+
+    <button>Increment </button>
+    <button>Reset</button>
+    <button>Decrement</button>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
