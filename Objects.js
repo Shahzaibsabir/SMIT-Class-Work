@@ -23,3 +23,20 @@ margin-top: 200px;
 }
 
 
+.container{
+
+    border: 5px solid black;
+    width: 60vh;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+   
+}
+
+
+
