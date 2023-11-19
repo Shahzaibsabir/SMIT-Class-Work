@@ -81,6 +81,14 @@ var numTag = document.querySelector("h1")
 
 function increment() {
 
+    numArr++;
+numTag.textContent = numArr++;
+console.log(numArr)
+
+}
+
+
+
 
 
 
